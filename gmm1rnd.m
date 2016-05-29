@@ -1,5 +1,5 @@
 function r = gmm1rnd(w,mu,sigma)
-%NORMRND Random arrays from 1-d Gaussian mixture models (gmm).
+%GMM1RND Random arrays from 1-d Gaussian mixture models (gmm).
 %   R = GMM1RND(W,MU,SIGMA) returns an array of random numbers chosen from 
 %   a 1-d Gaussian mixture model (gmm) with mixing weights W, means MU and
 %   standard deviations SIGMA. W, MU and SIGMA are supposed to be either
