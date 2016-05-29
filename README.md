@@ -5,15 +5,15 @@ This code is generally fast but there is space for further improvement (e.g., im
 
 #### Contents:
 
-- *gmm1cdf.m*: gmm1 cumulative distribution function (cdf)
-- *gmm1ent.m*: gmm1 differential entropy (numerically estimated)
-- *gmm1max.m*: Find the global maximum (mode) of gmm1
-- *gmm1max_n2.m*: Find the global maximum (mode) of gmm1 with 2 components (faster than  *gmm1max.m*)
-- *gmm1moments.m*: Central moments of gmm1 (mean, variance, skewness, excess kurtosis)
-- *gmm1pdf.m*: gmm1 probability density function (pdf)
-- *gmm1prod.m*: Product of two gmm1
-- *gmm1rnd.m*: Random draw from gmm1 (not optimal, needs recoding)
-- *isgmm1.m*: Returns true for a gmm1 struct
+- `gmm1cdf.m`: gmm1 cumulative distribution function (cdf)
+- `gmm1ent.m`: gmm1 differential entropy (numerically estimated)
+- `gmm1max.m`: Find the global maximum (mode) of gmm1
+- `gmm1max_n2.m`: Find the global maximum (mode) of gmm1 with 2 components (faster than  `gmm1max.m`)
+- `gmm1moments.m`: Central moments of gmm1 (mean, variance, skewness, excess kurtosis)
+- `gmm1pdf.m`: gmm1 probability density function (pdf)
+- `gmm1prod.m`: Product of two gmm1
+- `gmm1rnd.m`: Random draw from gmm1 (not optimal, needs recoding)
+- `isgmm1.m`: Returns true for a gmm1 struct
 
 #### References:
 
