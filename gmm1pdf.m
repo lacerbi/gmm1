@@ -70,14 +70,14 @@ if nargout > 2
 end
 
 for m = 1:M
-    z = bsxfun(@times, w(:, m)./sigma(:, m), exp(-0.5 * bsxfun(@power, bsxfun(@rdivide, (bsxfun(@minus,x,mu(:,m))), sigma(:, m)), 2)))/sqrt(2*pi);
+    z = bsxfun(@times, w(:, m)./sigma(:, m), exp(-0.5 * bsxfun(@rdivide, (bsxfun(@minus,x,mu(:,m))), sigma(:, m)).^2))/sqrt(2*pi);
     y = bsxfun(@plus, y, z);
     if nargout > 1
-        t = bsxfun(@rdivide, bsxfun(@minus, mu(:,m), x), bsxfun(@power, sigma(:, m), 2));
+        t = bsxfun(@rdivide, bsxfun(@minus, mu(:,m), x), sigma(:, m).^2);
         g = g + bsxfun(@times, z, t);
     end
     if nargout > 2
-        h = h + bsxfun(@times, z, bsxfun(@rdivide, -t-1, bsxfun(@power, sigma(:, m), 2)));
+        h = h + bsxfun(@times, z, bsxfun(@rdivide, -t-1, sigma(:, m).^2));
     end
 end
 
